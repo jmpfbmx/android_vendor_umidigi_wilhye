@@ -20,16 +20,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "CameraGo",
-	owner: "umidigi",
-	apk: "proprietary/app/CameraGo/CameraGo.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "Nfc_st",
 	owner: "umidigi",
 	apk: "proprietary/app/Nfc_st/Nfc_st.apk",

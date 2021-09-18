@@ -19,12 +19,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/umidigi/wilhye/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
-    vendor/umidigi/wilhye/proprietary/bin/netd:$(TARGET_COPY_OUT_SYSTEM)/bin/netd \
     vendor/umidigi/wilhye/proprietary/bin/nfcstackp:$(TARGET_COPY_OUT_SYSTEM)/bin/nfcstackp \
     vendor/umidigi/wilhye/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/umidigi/wilhye/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
     vendor/umidigi/wilhye/proprietary/lib/libdtaNfaProvider.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdtaNfaProvider.so \
     vendor/umidigi/wilhye/proprietary/lib/libicuXD.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libicuXD.so \
+    vendor/umidigi/wilhye/proprietary/lib/libmetricslogger.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmetricslogger.so \
     vendor/umidigi/wilhye/proprietary/lib/libnfc_st_dta.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc_st_dta.so \
     vendor/umidigi/wilhye/proprietary/lib/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc_st_dta_jni.so \
     vendor/umidigi/wilhye/proprietary/lib/libshowlogo.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libshowlogo.so \
@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/umidigi/wilhye/proprietary/lib/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsysenv_system.so \
     vendor/umidigi/wilhye/proprietary/lib64/libdtaNfaProvider.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdtaNfaProvider.so \
     vendor/umidigi/wilhye/proprietary/lib64/libicuXD.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libicuXD.so \
+    vendor/umidigi/wilhye/proprietary/lib64/libmetricslogger.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmetricslogger.so \
     vendor/umidigi/wilhye/proprietary/lib64/libnfc_st_dta.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_st_dta.so \
     vendor/umidigi/wilhye/proprietary/lib64/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_st_dta_jni.so \
     vendor/umidigi/wilhye/proprietary/lib64/libstnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstnfc-nci.so \
@@ -40,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/umidigi/wilhye/proprietary/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk-ril.so
 
 PRODUCT_PACKAGES += \
-    CameraGo \
     Nfc_st \
     com.st.android.nfc_dta_extensions \
     com.st.android.nfc_extensions
